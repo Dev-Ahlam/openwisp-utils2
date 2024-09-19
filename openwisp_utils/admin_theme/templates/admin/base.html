@@ -50,12 +50,7 @@
       </div>
     {% endblock %}
     <!-- END Header -->
-    {% block breadcrumbs %}
-    <div class="breadcrumbs">
-    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-    {% if title %} &rsaquo; {{ title }}{% endif %}
-    </div>
-    {% endblock %}
+ 
     {% endif %}
     <div class="main" id="main">
       {% if not is_popup and is_nav_sidebar_enabled %}
